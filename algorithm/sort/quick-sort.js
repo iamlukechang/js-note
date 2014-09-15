@@ -8,7 +8,7 @@
  *   O(N)
  *
  * Steps: 
- *   1. Check ths size of the array O(N), if the length is smaller or equal
+ *   1. Check ths size of the array, if the length is smaller or equal
  *      to 1, return the array, if the length is larger than 1, do following 
  *      1. Select an element as a pivot of the array // O(1)
  *      2. All the elements with value less than the pivot come before it, while
@@ -20,13 +20,16 @@
 
 function quickSort(arr) {
   var len = arr.length;
+  // step 1
   if (len <= 1) return arr;
 
+  // step 1.1
   var pivot = getPivotIndex(arr);
   var left = [],
       middle = [],
       right = [];
 
+  // step 1.2
   for (var i = 0; i < len; i++) {
     if (arr[i] < pivot) {
       left.push(arr[i]);
@@ -37,6 +40,7 @@ function quickSort(arr) {
     }
   }
 
+  // step 1.3
   return quickSort(left).concat(middle.concat(quickSort(right)));
 }
 
