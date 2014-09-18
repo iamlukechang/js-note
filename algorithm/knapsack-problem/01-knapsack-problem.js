@@ -58,7 +58,7 @@ function knapsack(itemArr, volume, itemIdx, cache) {
   if (cache[volume] && cache[volume].itemIdx == itemIdx)
       return cache[volume].value;
 
-  var targetItem =  itemArr[itemIdx - 1];
+  var targetItem = itemArr[itemIdx - 1];
 
   // step 3
   // this costs 2w space, so the space complexity is O(W)
