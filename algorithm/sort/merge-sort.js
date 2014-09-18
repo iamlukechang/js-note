@@ -8,8 +8,8 @@
  *   O(N)
  *
  * Steps: 
- *   1. Check ths size of the array O(N), if the length is equal to 1, return
- *       the array, if the length is larger than 1, divide the arr into two parts
+ *   1. Set boundary
+ *   2. Divide the arr into two parts
  *     1. Do merge sort to each part // N = N/2
  *     2. Merge the two sorted parts. // O(N)
  *

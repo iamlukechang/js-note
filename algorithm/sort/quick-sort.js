@@ -8,12 +8,11 @@
  *   O(N)
  *
  * Steps: 
- *   1. Check ths size of the array, if the length is smaller or equal
- *      to 1, return the array, if the length is larger than 1, do following 
- *      1. Select an element as a pivot of the array // O(1)
- *      2. All the elements with value less than the pivot come before it, while
- *         all the elements with value larger than the pivot come after it // O(N)
- *      3. Do quick sort to the left and the right, and concat them. // N <= N
+ *   1. Set boundary condition
+ *   2. Select an element as a pivot of the array // O(1)
+ *     1. All the elements with value less than the pivot come before it, while
+ *        all the elements with value larger than the pivot come after it // O(N)
+ *     2. Do quick sort to the left and the right, and concat them. // N <= N
  *
  * @author iamlukechang@gmail.com (Luke Chang)
  */
