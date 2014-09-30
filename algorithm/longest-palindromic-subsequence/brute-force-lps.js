@@ -51,7 +51,7 @@ function lps(seq) {
     }
   }
 
-  return result;
+  return seq.slice(result.start, result.start + result.size);
 }
 
 // export as a node module
