@@ -65,7 +65,7 @@ var targets = [];
 (function () {
   var prop;
 
-  modle = {
+  model = {
     set prop(arg) {
       for (var i = 0, len = targets.length; i < len; i++) {
         targets[i].prop = arg;
@@ -85,8 +85,8 @@ targets.push({prop: 3})
 targets[0].prop; // 0
 targets[1].prop; // 3
 
-modle.prop = 5;
-modle.prop; // 5
+model.prop = 5;
+model.prop; // 5
 
 targets[0].prop // 5
 targets[1].prop // 5
