@@ -22,7 +22,7 @@
  * excution context (global or function)
  */
 
-// an object obj with a property prop
+// declare an object obj with a property prop
 var obj = {prop: 'a property'};
 
 // writable
@@ -33,14 +33,17 @@ for (var p in obj) { // 'an updated property'
   console.log(obj[p]);
 }
 
+// the property is configurable
+delete obj.prop; // true
+
+// but the obj itself is non-configurable
+delete obj; // false
+
+// undeclared variable x 
+x = 'x';
+
 // configurable
-delete obj.prop;
-
-// declare a variable x in the global scope
-var x = 'x';
-
-// non-configurable
-delete x; // false
+delete x; // true
 
 // a function with a declared variable y in its scope
 var f = function () {var y = 'y'; return delete y;};
