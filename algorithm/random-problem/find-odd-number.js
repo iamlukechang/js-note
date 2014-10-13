@@ -9,30 +9,17 @@
  *   O(1)
  *
  * Steps
- *   1. Find the distance of the smallest negative number and 0 // O(N)
- *   2. Loop the array and xor each element plus the distance as an offset, at
- *      the end, remove the offset of result is the answer
- *
- *      Note: the offset is used to make sure all the elements be nature numbers
- *            before xor them.
+ *   1. Loop the array and xor each element
  *
  */
 
 function search(arr) {
-  var i = 0, len = arr.length;
-  // step 1
-  var offset = 0;
-  for (i = 0; i < len; i++) {
-    offset = Math.min(offset, arr[i]);
-  }
-
-  // step 2
   var rst = 0;
-  for (i = 0; i < len; i++) {
-    rst ^= arr[i] - offset;
+  for (var i = 0, len = arr.length; i < len; i++) {
+    rst ^= arr[i];
   }
 
-  return rst + offset;
+  return rst;
 }
 
 // export as a node module
