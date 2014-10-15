@@ -14,6 +14,10 @@
  *      same, move the pointers for one step. At the end, if the two pointers
  *      cannot meet each other, return false, otherwise return true;
  *
+ *      Note: In javascript, we can actually do this step with transfering the
+ *            the number to a string and check charactors, but here is an
+ *            example of how to do it with number
+ *
  */
 
 /**
