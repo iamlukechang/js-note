@@ -9,7 +9,7 @@
  *   luke.canCode('ruby'); // false 
  *   luke.getName(); // Luke Chang
  *
- *   var lucia = new Developer('Lucia', 'Chambers', 'piano');
+ *   var lucia = new Musician('Lucia', 'Chambers', 'piano');
  *   lucia.play(); // Playing piano...
  *   lucia.getName(); // Lucia Chambers
  *

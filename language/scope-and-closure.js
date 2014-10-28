@@ -138,7 +138,7 @@ consolerArr[5](); // 5
  *
  * When code is executed, an internal object called "execution context" is
  * created. It defines the environment of the current executing code. There are
- * three kindex of execution context:
+ * three kinds of execution context:
  *
  *   Global context: when javascript is initially executed, the global execution
  *     context is created first.
