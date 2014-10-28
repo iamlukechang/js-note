@@ -13,17 +13,9 @@
  */
 
 function gcd(num1, num2) {
-  if (num1 == num2) return num1;
+  if (num2 == 0) return num1;
 
-  return euclidean(Math.max(num1, num2), Math.min(num1, num2));
-}
-
-function euclidean(largerNum, smallerNum) {
-  var remainder = largerNum % smallerNum;
-
-  if (remainder == 0) return smallerNum;
-
-  return euclidean(smallerNum, remainder);
+  return gcd(num2, num1 % num2)
 }
 
 // export as a node module
