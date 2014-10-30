@@ -1,6 +1,6 @@
 /**
- * Given an array of integers, all the elements appear two or mupital of two
- * times except only one. Find that one odd element.
+ * Given an array of integers, all the elements appear two or muptiple of two
+ * times except only one that appears only one time. Find that one odd element.
  *
  * Time:
  *   O(N)
@@ -9,8 +9,10 @@
  *   O(1)
  *
  * Steps
- *   1. Loop the array and xor each element
+ *   1. Loop the array and XOR each element, because a bits XOR itself will
+ *      be zero
  *
+ * @author iamlukechang@gmail.com (Luke Chang)
  */
 
 function search(arr) {
