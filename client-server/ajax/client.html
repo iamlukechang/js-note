@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    var xhr = new XMLHttpRequest;
+    
+    xhr.open('GET', '/data.json');
+    xhr.onload = function (data) {
+      console.log(JSON.parse(this.response));
+    };
+
+    xhr.send();
+  </script>
+</head>
+<body>
+</body>
+</html>
