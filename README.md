@@ -1,4 +1,4 @@
 js-note
 =======
 
-JavaScript Notes
+JavaScript Note
